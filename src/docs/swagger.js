@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://todos-seven-smoky.vercel.app/todos",
+        url: "https://todos-seven-smoky.vercel.app/docs",
         description: "Production Server",
       },
       {
