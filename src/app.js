@@ -1,7 +1,5 @@
 import express from "express"
 import cors from "cors"
-import swaggerUi from "swagger-ui-express"
-import swaggerSpec from "./docs/swagger.js"
 import todoRoutes from "./routes/todo.routes.js"
 
 const app = express()
