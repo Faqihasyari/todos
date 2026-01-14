@@ -1,4 +1,4 @@
-const swaggerJSDoc = require("swagger-jsdoc");
+import swaggerJSDoc from "swagger-jsdoc";
 
 const options = {
   definition: {
@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://todos-seven-smoky.vercel.app/docs",
+        url: "https://todos-seven-smoky.vercel.app",
         description: "Production Server",
       },
       {
@@ -18,11 +18,10 @@ const options = {
         description: "Development Server",
       },
     ],
-    security: [],
   },
   apis: ["./src/routes/*.js"],
 };
 
 const swaggerSpec = swaggerJSDoc(options);
 
-module.exports = swaggerSpec;
+export { swaggerSpec };
